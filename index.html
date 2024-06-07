@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    .header {
+      width: 100%;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .project-description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">Projects and  practice</div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="project">
+          <div class="project-title">01</div>
+          <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget.</div>
+          <img src="https://wezhape.com/cdn/shop/articles/Eboz_3d_printer_with_a_tree_growing_on_top_of_it_digital_art_df086b48-ab7c-4ed2-a18d-27938e040b48.png?v=1676581902" alt="Project 1">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project">
+          <div class="project-title">02</div>
+          <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget.</div>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/022/653/879/small_2x/fantasy-island-with-waterfalls-3d-illustration-elements-of-this-image-furnished-by-nasa-generative-ai-free-photo.jpg" alt="Project 2">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project">
+          <div class="project-title">03</div>
+          <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget.</div>
+          <img src="https://us.123rf.com/450wm/pavelshlykov/pavelshlykov2302/pavelshlykov230200144/197823728-isolated-green-island-with-mountain-and-palm-flying-high-in-deep-sea-ai-generative.jpg?ver=6" alt="Project 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
